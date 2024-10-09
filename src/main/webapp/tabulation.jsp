@@ -13,9 +13,10 @@
     <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
-<div class="table">
+<div class="container">
+    <div class="table" >
     <h2>Max and Min Values</h2>
-    <table>
+    <table style="margin: 0 auto">
         <thead>
         <tr><th></th><th>I</th><th>X</th><th>Y</th></tr>
         </thead>
@@ -24,23 +25,16 @@
         <tr><td>Min</td><td>${result.minI}</td><td>${result.minX}</td><td>${result.minY}</td></tr>
         </tbody>
     </table>
-
-    <h2> Sum and Average</h2>
-    <table>
-        <thead><tr><th>Sum</th><th>Average</th></tr></thead>
-        <tbody>
-        <tr><td>${result.sum}</td><td>${result.average}</td></tr>
-        </tbody>
-    </table>
-    <button type="submit" class="button" onclick="GoBack()">Tabulate</button>
+        <p>Sum : ${result.sum}</p>
+        <p>Average : ${result.average}</p>
+    <button type="submit" class="button" onclick="GoBack()">Input new values</button>
+    </div>
 </div>
 
 <div class="container">
-    <h2>Arrays X and Y</h2>
     <%
         double[] arrX = result.getXArr();
         double[] arrY = result.getYArr();
-
     %>
     <table class="table">
         <thead>

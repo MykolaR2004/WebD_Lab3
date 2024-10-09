@@ -1,3 +1,26 @@
+
+body {
+    font-family: 'Bahnschrift', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+button {
+    background-color: silver;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+}
+
 .main {
     display: flex;
     justify-content: center;
@@ -14,49 +37,38 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
+    margin-top: 25px;
     background-color: grey;
-    border-color: #333333;
     border-radius: 30px;
-}
-
-
-.table {
     width: 100%;
+    max-width: 800px;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
     border-collapse: collapse;
-    margin: 20px 0;
     font-size: 18px;
-    text-align: left;
-}
-
-.table thead th {
-    background-color: #f2f2f2;
-    color: #333;
-    font-weight: bold;
-    padding: 12px;
-    border-bottom: 2px solid #ddd;
-}
-
-.table tbody tr {
-    border-bottom: 1px solid #ddd;
-}
-
-.table tbody td {
-    padding: 10px;
-}
-
-.table tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-.table tbody tr:hover {
-    background-color: #a5a5a5;
-}
-
-.table tbody td {
+    justify-content: center;
     text-align: center;
 }
 
-.table tbody td:first-child {
-    font-size: 16px;
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+table thead th {
+    background-color: #f2f2f2;
+    color: #333;
     font-weight: bold;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #a5a5a5;
 }

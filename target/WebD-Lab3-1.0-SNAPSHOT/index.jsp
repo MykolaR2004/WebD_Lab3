@@ -2,11 +2,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>JSP - Hello World</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
-    <title></title>
 </head>
 <body>
-<h1><%= "Hello World!" %></h1>
 <br/>
 <div class="main">
     <div class="container">
